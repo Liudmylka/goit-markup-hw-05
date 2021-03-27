@@ -108,7 +108,7 @@ ul {
   height: 16px;
   margin-right: 10px;
   margin-top: 0px;
-  transition-property: var(--color-link);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -161,7 +161,7 @@ ul {
   line-height: 114%;
   letter-spacing: 0.02em;
   display: flex;
-  transition-property: var(--color-link);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -172,6 +172,7 @@ ul {
 .site-nav:active {
   color: var(--color-link);
 }
+
 .open-link {
   display: inline-block;
   align-items: center;
@@ -187,7 +188,7 @@ ul {
   font-size: 14px;
   line-height: 114%;
   letter-spacing: 0.02em;
-  transition-property: var(--color-link);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -211,7 +212,7 @@ ul {
   text-decoration: none;
   letter-spacing: 0.02em;
   position: relative;
-  transition-property: var(--color-link);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -287,7 +288,7 @@ button {
   border-radius: 4px;
   border: #f5f4fa;
   height: 38px;
-  transition-property: var(--color-link);
+  transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -335,6 +336,11 @@ button {
   cursor: pointer;
 }
 .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.2);
 }
 .backdrop.is-hidden {
@@ -346,7 +352,7 @@ button {
   z-index: 2;
   opacity: 0;
   pointer-events: none;
-  transition-property: var(--color-link);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -366,7 +372,7 @@ button {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
-  transition-property: var(--color-link);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -421,7 +427,7 @@ button {
   color: var(--text--small-text);
   text-decoration: none;
   letter-spacing: 0.02em;
-  transition-property: var(--color-link);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -441,7 +447,7 @@ button {
   color: var(--text--small-text);
   text-decoration: none;
   letter-spacing: 0.02em;
-  transition-property: var(--color-link);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -674,7 +680,7 @@ img {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
-  transition-property: var(--color-link);
+  transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -726,7 +732,7 @@ img {
   top: 0;
   left: 0;
   transform: translateY(100%);
-  transition-property: var(--color-link);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -774,7 +780,7 @@ img {
 .images-card {
   margin-right: 20px;
   margin-bottom: 20px;
-  transition-property: var(--color-link);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -791,7 +797,7 @@ li:nth-child(n + 7) {
 .images-last {
   margin-right: 0px;
   margin-bottom: 30px;
-  transition-property: var(--color-link);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -844,7 +850,7 @@ li:nth-child(n + 7) {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-property: var(--color-link);
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -865,7 +871,7 @@ li:nth-child(n + 7) {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-property: var(--color-link);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -879,7 +885,7 @@ li:nth-child(n + 7) {
 
 .object {
   fill: #afb1b8;
-  transition-property: var(--color-link);
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -916,7 +922,7 @@ li:nth-child(n + 7) {
   text-decoration: none;
   letter-spacing: 0.03em;
   text-align: left;
-  transition-property: var(--color-link);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
@@ -983,7 +989,7 @@ li:nth-child(n + 7) {
   align-items: center;
   justify-content: center;
   color: var(--title);
-  transition-property: var(--color-link);
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
